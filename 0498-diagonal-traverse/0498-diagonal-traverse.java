@@ -1,7 +1,7 @@
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
-        int m=mat.length;
-        int n=mat[0].length;
+        int m=mat.length; //row
+        int n=mat[0].length; //col
         int[]res=new int[m*n];
         int r=0;
         int c=0;

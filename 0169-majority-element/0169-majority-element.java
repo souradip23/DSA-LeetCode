@@ -4,9 +4,6 @@ class Solution {
         // Arrays.sort(nums);
         // return nums[size/2];
 
-
-
-
         int count = 0;
         int candidate = 0;
 

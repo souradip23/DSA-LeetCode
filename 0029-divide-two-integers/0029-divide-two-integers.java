@@ -3,6 +3,7 @@ class Solution {
         if(dividend==Integer.MIN_VALUE && divisor ==-1){
             return Integer.MAX_VALUE;
         }
+        //optional
         if(divisor==0){
             throw new ArithmeticException("Can't divide by 0");
         }     

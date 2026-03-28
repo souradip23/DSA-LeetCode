@@ -10,7 +10,6 @@ public:
             int first = pq.top();
             pq.pop();
             int second = pq.top();
-         
             int product = ((first - 1) * (second - 1));
             maxProduct = max(product, maxProduct);
         }

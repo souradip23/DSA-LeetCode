@@ -4,7 +4,6 @@ public:
         priority_queue<pair<int, int>> pq;
         for (int num : arr) {
             pq.push({abs(num - x), num});
-
             if (pq.size() > k) {
                 pq.pop();
             }

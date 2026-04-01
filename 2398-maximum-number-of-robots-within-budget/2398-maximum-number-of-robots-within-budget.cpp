@@ -1,7 +1,6 @@
 class Solution {
 public:
-    int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts,
-                      long long budget) {
+    int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts,long long budget) {
         deque<int> dq; // stores indices of chargeTimes (max at front)
         long long sum = 0;
         int left = 0, ans = 0;

@@ -28,7 +28,6 @@ class Solution {
         after.next = null;
         // Connect two lists
         before.next = afterHead.next;
-
         return beforeHead.next;
     }
 }

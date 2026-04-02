@@ -9,7 +9,6 @@ class Solution {
             res.add(new ArrayList<>(list));
         return ;
         }
-
         for(int i=index;i<=n;i++){
             list.add(i);
             backtrack(i+1,n,k,list,res);

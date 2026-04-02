@@ -1,14 +1,12 @@
 class Solution {
 public:
     vector<int> maxSubsequence(vector<int>& nums, int k) {
-        int n = nums.size();
-        
+        int n = nums.size();   
         // Step 1: store indices
         vector<int> idx(n);
         for(int i = 0; i < n; i++) {
             idx[i] = i;
         }
-
         // Step 2: sort indices based on values
         sort(idx.begin(), idx.end(), [&](int a, int b){
             return nums[a] < nums[b];

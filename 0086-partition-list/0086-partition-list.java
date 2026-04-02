@@ -12,10 +12,8 @@ class Solution {
     public ListNode partition(ListNode head, int x) {
         ListNode beforeHead = new ListNode(0);
         ListNode afterHead = new ListNode(0);
-
         ListNode before = beforeHead;
         ListNode after = afterHead;
-
         while (head != null) {
             if (head.val < x) {
                 before.next = head;
@@ -26,10 +24,8 @@ class Solution {
             }
             head = head.next;
         }
-
         // Important: avoid cycle
         after.next = null;
-
         // Connect two lists
         before.next = afterHead.next;
 

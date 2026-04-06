@@ -4,11 +4,11 @@ class Solution {
 
         //  return Integer.bitCount(x ^ y);
 
-       // * Brian Kernighan’s Algorithm
-        int xor=x^y;
-        int count=0;
-        while(xor!=0){
-            xor=xor &(xor-1);
+        // * Brian Kernighan’s Algorithm
+        int xor = x ^ y;
+        int count = 0;
+        while (xor != 0) {
+            xor = xor & (xor - 1);
             count++;
         }
         return count;

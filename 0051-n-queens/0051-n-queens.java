@@ -11,19 +11,15 @@ class Solution {
         return res;
     }
     public void generate(char[][] board, int row) {
-        if (row == board.length) {
-            List<String> list = new ArrayList<>();
-            for (int i = 0; i < board.length; i++) {
-                list.add(new String(board[i]));
-            }
-            res.add(list);
+        if(row==N){
+             res.add(construct(board));
             return;
         }
-        for (int col = 0; col < board[row].length; col++) {
-            if (isSafe(board, row, col)) {
-                board[row][col] = 'Q';
+        for(int col=0;col<N;col++){
+            if(isSafe(board,row,col)){
+                board[row][col]='Q';
                 generate(board, row + 1);
-                board[row][col] = '.'; 
+                board[row][col]='.';
             }
         }
     }
@@ -41,5 +37,12 @@ class Solution {
         }
 
         return true;
+    }
+    private List<String> construct(char[][] board) {
+        List<String> list = new ArrayList<>();
+        for (char[] row : board) {
+            list.add(new String(row));
+        }
+        return list;
     }
 }

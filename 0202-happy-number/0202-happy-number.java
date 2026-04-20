@@ -18,6 +18,7 @@ class Solution {
     //     return n==1;
     // }
         // Function to calculate sum of squares of digits
+        
     private static int getNext(int n) {
         int total = 0;
         while (n > 0) {

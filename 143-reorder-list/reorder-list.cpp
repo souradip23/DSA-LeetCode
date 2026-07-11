@@ -25,9 +25,9 @@ public:
         if (left == right) {
             ans.push_back(v[left]);
         }
-        for (int i = 0; i < ans.size(); i++) {
-            cout << ans[i] << " ";
-        }
+        // for (int i = 0; i < ans.size(); i++) {
+        //     cout << ans[i] << " ";
+        // }
 
         temp = head;
 

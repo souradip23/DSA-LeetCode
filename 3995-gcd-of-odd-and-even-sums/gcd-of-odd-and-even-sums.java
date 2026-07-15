@@ -8,4 +8,5 @@ class Solution {
         int sumodd=n*(n+1);
         return gcd(sumeven,sumodd);
     }
+    
 }

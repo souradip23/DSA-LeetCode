@@ -14,4 +14,4 @@ class Solution {
         int divisor = digitSum + digitProduct;
         return original % divisor == 0;
     }
-    }
+}

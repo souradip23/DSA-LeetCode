@@ -1,4 +1,5 @@
 class Solution {
+    
     record Item(int price, int factor) implements Comparable<Item> {
         public int compareTo(Item other) {
             return Integer.compare(price, other.price);
